@@ -1,10 +1,11 @@
 import React from "react";
 import Layout from "../components/Layout";
 import SlideShow from "../components/Slideshow";
+import MediaCard from "../components/MediaCard.jsx"
 
 const HomePage = () => {
   return (
-    <Layout>
+    <Layout style={{paddingLeft: "0"}}>
        <SlideShow
             timeOut={3000}
             images={[
@@ -19,6 +20,7 @@ const HomePage = () => {
               
             ]}
           ></SlideShow>
+          <MediaCard/>
     </Layout>
   );
 };
