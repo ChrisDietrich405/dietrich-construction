@@ -50,9 +50,8 @@ function ResponsiveAppBar() {
             sx={{
               mr: 2,
               display: { xs: "none", md: "flex" },
-              fontFamily: "monospace",
+              fontFamily: "roboto",
               fontWeight: 700,
-              letterSpacing: ".3rem",
               color: "inherit",
               textDecoration: "none",
             }}
@@ -115,11 +114,21 @@ function ResponsiveAppBar() {
           <MenuItem>
             <Typography textAlign="center">Services</Typography>
           </MenuItem>
-          <Link href="/contact">
-            <MenuItem>
-              <Typography textAlign="center"> Contact</Typography>
-            </MenuItem>
-          </Link>
+          <MenuItem>
+            <Typography textAlign="center">
+              {" "}
+              <Link
+                style={{
+                  textDecoration: "none",
+                  color: "#fff",
+                  marginRight: "50px",
+                }}
+                href="/contact"
+              >
+                Contact
+              </Link>
+            </Typography>
+          </MenuItem>
 
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
