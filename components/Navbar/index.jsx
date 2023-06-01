@@ -106,7 +106,7 @@ function ResponsiveAppBar() {
               textDecoration: "none",
             }}
           >
-            LOGO
+            Dietrich Construction{" "}
           </Typography>
           <MenuItem>
             <Typography textAlign="center">Products</Typography>

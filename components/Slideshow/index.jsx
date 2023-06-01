@@ -59,6 +59,9 @@ export default class SlideShow extends React.Component {
             />
           </div>
         </div>
+        <div className={styles.contact}>
+          321 233 2122
+        </div>
       </div>
     );
   }
