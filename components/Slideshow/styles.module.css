@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  transition: 0.4s;
 }
 
 .darken {
@@ -71,6 +72,21 @@
   background-color: #c2fdf1 !important;
 }
 
+.contact_container {
+  background-color: #448c7e !important;
+  z-index: 112;
+  position: absolute;
+  top: 81%;
+  left: 4%;
+  width: 100px;
+  height: 30px;
+  transition: 0.4s;
+}
+
+.hello:hover {
+  background: #c2fdf1;
+}
+
 .arrow_left,
 .arrow_right {
   margin-top: 11px;
@@ -79,11 +95,29 @@
 }
 
 .contact {
-  position: absolute; 
-  padding: 30px; 
-  background-color: purple;
+  width: 300px;
+  height: 300px;
+  font-weight: bold;
+  position: absolute;
+  padding: 30px;
+  background-color: #fff;
+  color: #000;
   bottom: 20px;
   left: 20px;
+}
+
+.contact:hover {
+  background-color: aqua !important;
+}
+
+.number {
+  cursor: pointer;
+  transition: 0.3s;
+  color: #fff !important;
+}
+
+.number:hover {
+  color: #000;
 }
 
 @media (max-width: 1043px) {

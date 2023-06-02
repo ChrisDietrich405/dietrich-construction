@@ -58,9 +58,11 @@ export default class SlideShow extends React.Component {
               onClick={nextSlideShow}
             />
           </div>
-        </div>
-        <div className={styles.contact}>
-          321 233 2122
+          <div className={styles.contact_container}>
+            <div>
+              <p className={styles.hello}>321 333 2222</p>
+            </div>
+          </div>
         </div>
       </div>
     );
