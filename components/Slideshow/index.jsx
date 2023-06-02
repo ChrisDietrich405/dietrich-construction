@@ -2,6 +2,7 @@ import React from "react";
 
 import { AiOutlineArrowLeft } from "react-icons/ai";
 import { AiOutlineArrowRight } from "react-icons/ai";
+import { AiFillPhone } from "react-icons/ai";
 
 import styles from "./styles.module.css";
 
@@ -59,8 +60,9 @@ export default class SlideShow extends React.Component {
             />
           </div>
           <div className={styles.contact_container}>
-            <div>
-              <p className={styles.hello}>321 333 2222</p>
+            <div className={styles.contain}>
+              <AiFillPhone className={styles.hello} />
+              <p className={styles.hello}>(443) 306-5270</p>
             </div>
           </div>
         </div>

@@ -27,22 +27,21 @@ const HomePage = () => {
           },
         ]}
       ></SlideShow>
-      <MediaCard />
       <section className={styles.our_services_container}>
-        <Container>
-          <h1>Our Services</h1>
-          <div className={styles.icon_container}>
-            <FaPaintRoller className={styles.icon} />
-            <Image
-              src="/bricks.png"
-              width={150}
-              height={150}
-              alt="Picture of the author"
-            ></Image>
-            <BsFillHouseDoorFill />
-          </div>
-        </Container>
+        <h2 className={styles.titles}>Our Services</h2>
+        <div className={styles.icon_container}>
+          <FaPaintRoller className={styles.icon} />
+          <Image
+            src="/bricks.png"
+            width={150}
+            height={150}
+            alt="Picture of the author"
+          ></Image>
+          <BsFillHouseDoorFill className={styles.icon} />
+        </div>
       </section>
+      <h2 className={styles.titles}>Our Projects</h2>
+      <MediaCard />
     </Layout>
   );
 };

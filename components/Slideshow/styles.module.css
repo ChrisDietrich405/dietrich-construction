@@ -5,6 +5,7 @@
   justify-content: center;
   position: relative;
   transition: 0.4s;
+  margin-bottom: 20px;
 }
 
 .darken {
@@ -73,18 +74,26 @@
 }
 
 .contact_container {
-  background-color: #448c7e !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff !important;
   z-index: 112;
   position: absolute;
   top: 81%;
   left: 4%;
-  width: 100px;
-  height: 30px;
-  transition: 0.4s;
+  width: 150px;
+  height: 60px;
 }
 
-.hello:hover {
-  background: #c2fdf1;
+.contain {
+  display: flex; 
+}
+
+.contain:hover {
+  color: antiquewhite;
+  transition: 0.4s !important ;
+  cursor: pointer;
 }
 
 .arrow_left,
@@ -106,19 +115,10 @@
   left: 20px;
 }
 
-.contact:hover {
-  background-color: aqua !important;
-}
 
-.number {
-  cursor: pointer;
-  transition: 0.3s;
-  color: #fff !important;
-}
 
-.number:hover {
-  color: #000;
-}
+
+
 
 @media (max-width: 1043px) {
   .slide_show {
