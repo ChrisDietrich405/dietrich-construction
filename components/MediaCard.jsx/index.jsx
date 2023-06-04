@@ -52,32 +52,34 @@ export default function MediaCard() {
           margin: "0, auto",
         }}
       >
-        <Grid
-          container
-          spacing={2}
-          margin="0, auto"
-          direction="row"
-          justify="center" // Set justify to "center" to horizontally center the cards
-          alignItems="center" // Set alignItems to "center" to vertically center the cards
-        >
-          {data2.map((item, index) => (
-            <Grid
-              item
-              xs={12}
-              sm={6}
-              md={3}
-              key={index}
-              style={{ textAlign: "center" }}
-            >
-              <h1>{item.name}</h1>
-              <CardMedia
-                sx={{ height: 240, width: 240 }}
-                image={item.image}
-                title="green iguana"
-              />
-            </Grid>
-          ))}
-        </Grid>
+        <div style={{ display: "flex", justifyContent: "center" }}>
+          <Grid
+            container
+            spacing={2}
+            direction="row"
+            justify="center"
+            alignItems="center"
+          >
+            {data2.map((item, index) => (
+              <Grid
+                item
+                xs={12}
+                sm={6}
+                md={3}
+                key={index}
+                style={{ textAlign: "center", margin: "0 20px" }}
+              
+              >
+                <h1>{item.name}</h1>
+                <CardMedia
+                  sx={{ height: 240, width: 240 }}
+                  image={item.image}
+                  title="green iguana"
+                />
+              </Grid>
+            ))}
+          </Grid>
+        </div>
       </Box>
     </Container>
   );
