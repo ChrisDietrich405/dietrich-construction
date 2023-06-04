@@ -6,6 +6,7 @@ import { BsFillHouseDoorFill } from "react-icons/bs";
 import Layout from "../components/Layout";
 import SlideShow from "../components/Slideshow";
 import MediaCard from "../components/MediaCard.jsx";
+import Testimonials from "../components/Testimonials";
 
 import Container from "@mui/material/Container";
 
@@ -42,6 +43,7 @@ const HomePage = () => {
       </section>
       <h2 className={styles.titles}>Our Projects</h2>
       <MediaCard />
+      <Testimonials />
     </Layout>
   );
 };

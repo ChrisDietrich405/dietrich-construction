@@ -1,5 +1,6 @@
 import * as React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -11,8 +12,17 @@ import MenuIcon from "@mui/icons-material/Menu";
 export default function ButtonAppBar() {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+      <AppBar
+        position="static"
+        style={{ backgroundColor: "#fff", color: "#000" }}
+      >
         <Toolbar>
+          <Image
+            src="/dclogo.png"
+            width={50}
+            height={50}
+            alt="Picture of the author"
+          />
           <Typography
             variant="h6"
             noWrap
@@ -33,7 +43,7 @@ export default function ButtonAppBar() {
             <Link
               style={{
                 textDecoration: "none",
-                color: "#fff",
+                color: "#000",
                 marginLeft: "50px",
               }}
               href="/contact"
