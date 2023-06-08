@@ -17,12 +17,7 @@ export default function ButtonAppBar() {
         style={{ backgroundColor: "#fff", color: "#000" }}
       >
         <Toolbar>
-          <Image
-            src="/dclogo.png"
-            width={50}
-            height={50}
-            alt="Picture of the author"
-          />
+          <Image src="/dclogo.png" width={50} height={50} alt="Company Logo" />
           <Typography
             variant="h6"
             noWrap

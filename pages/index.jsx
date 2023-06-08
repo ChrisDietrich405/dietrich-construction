@@ -11,6 +11,7 @@ import Testimonials from "../components/Testimonials";
 import Container from "@mui/material/Container";
 
 import styles from "../styles/Home.module.css";
+import Footer from "../components/Footer";
 
 const HomePage = () => {
   return (
@@ -23,8 +24,12 @@ const HomePage = () => {
             title: "Fence Installation",
           },
           {
-            url: "/me.jpg",
-            title: "Sod Installation",
+            url: "/deck.jpg",
+            title: "Deck Installation",
+          },
+          {
+            url: "/paver.jpg",
+            title: "Paver Installation",
           },
         ]}
       ></SlideShow>
@@ -44,6 +49,7 @@ const HomePage = () => {
       <h2 className={styles.titles}>Our Projects</h2>
       <MediaCard />
       <Testimonials />
+  
     </Layout>
   );
 };
