@@ -1,3 +1,5 @@
+//www.cgtconstructionllc.com
+
 import React from "react";
 import Image from "next/image";
 import { FaPaintRoller } from "react-icons/fa";
@@ -41,7 +43,7 @@ const HomePage = () => {
             src="/bricks.png"
             width={150}
             height={150}
-            alt="Picture of the author"
+            alt="bricks"
           ></Image>
           <BsFillHouseDoorFill className={styles.icon} />
         </div>
@@ -49,7 +51,6 @@ const HomePage = () => {
       <h2 className={styles.titles}>Our Projects</h2>
       <MediaCard />
       <Testimonials />
-  
     </Layout>
   );
 };

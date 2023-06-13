@@ -17,7 +17,15 @@ export default function ButtonAppBar() {
         style={{ backgroundColor: "#fff", color: "#000" }}
       >
         <Toolbar>
-          <Image src="/dclogo.png" width={50} height={50} alt="Company Logo" />
+          <Link href="/">
+            <Image
+              src="/dclogo.png"
+              width={50}
+              height={50}
+              alt="Company Logo"
+            />
+          </Link>
+
           <Typography
             variant="h6"
             noWrap
@@ -53,7 +61,6 @@ export default function ButtonAppBar() {
   );
 }
 
-// import * as React from "react";
 // import { useState } from "react";
 // import Link from "next/link";
 // import AppBar from "@mui/material/AppBar";
