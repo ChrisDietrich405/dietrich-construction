@@ -17,7 +17,8 @@ import Footer from "../components/Footer";
 
 const HomePage = () => {
   return (
-    <Layout style={{ paddingLeft: "0" }}>
+    // <Layout style={{ paddingLeft: "0" }}>
+    <>
       <SlideShow
         timeOut={3000}
         images={[
@@ -51,7 +52,8 @@ const HomePage = () => {
       <h2 className={styles.titles}>Our Projects</h2>
       <MediaCard />
       <Testimonials />
-    </Layout>
+    </>
+    // </Layout>
   );
 };
 
