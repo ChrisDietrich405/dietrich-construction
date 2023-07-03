@@ -19,3 +19,22 @@
 .icon {
   font-size: 150px;
 }
+
+@media only screen and (max-width: 900px) {
+  .our_services_container {
+    width: 300px;
+  }
+
+  .icon_container {
+    width: 300px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .titles {
+    font-size: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}

@@ -14,6 +14,9 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
+import { AiFillInstagram } from "react-icons/ai";
+
+import styles from "./styles.module.css";
 
 const pages = [
   { pageTitle: "About Us", pageLink: "/aboutus" },
@@ -57,6 +60,7 @@ function ResponsiveAppBar() {
             />
           </Link>
           <Typography
+            // className={}
             variant="h6"
             noWrap
             component="a"
@@ -138,9 +142,15 @@ function ResponsiveAppBar() {
                 <Button
                   key={page}
                   onClick={handleCloseNavMenu}
-                  sx={{ my: 2, color: "black", display: "block" }}
+                  sx={{
+                    my: 2,
+                    color: "black",
+                    display: "block",
+                  }}
                 >
-                  <Link href={page.pageLink}>{page.pageTitle}</Link>
+                  <Link className={styles.pageLinks} href={page.pageLink}>
+                    {page.pageTitle}
+                  </Link>
                 </Button>
               );
             })}
@@ -156,11 +166,19 @@ function ResponsiveAppBar() {
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Open settings">
+            <a
+              href="https://www.instagram.com/dietrich_landcarellc/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <AiFillInstagram className={styles.social_media_icon} />
+            </a>
+
+            {/* <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
               </IconButton>
-            </Tooltip>
+            </Tooltip> */}
             <Menu
               sx={{ mt: "45px" }}
               id="menu-appbar"

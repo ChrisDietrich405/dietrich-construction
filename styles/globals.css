@@ -1,4 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Grey+Qo&family=Roboto:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Grey+Qo&family=Roboto:wght@300&display=swap");
+
+:root {
+  --primary-color: #323b52;
+  --highlight-color: #398e9a;
+  --title-color: --highlight-color;
+  --secondary-color: #15223f;
+  --tertiary-color: #546484;
+}
 
 * {
   box-sizing: border-box;
@@ -13,7 +21,7 @@
 }
 
 .contact-container {
-  display: flex; 
-  width: 1200px; 
-  margin: 0 auto; 
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
 }
